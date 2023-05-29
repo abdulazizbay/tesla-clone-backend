@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\abdul\OneDrive\Рабочий стол\react_tutorial\tesla-copy\api\venv"
+VIRTUAL_ENV="D:\nodejs-projects\tesla-copy (2)\tesla-copy\tesla\api\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -43,8 +43,9 @@ export const Registration =()=>{
             <StyledRegistration>
             <div className="login-container">
                     <div className="title"><h1>Create Account</h1></div>
-                    <div className="main-info">
+                    
                         <form onSubmit={handleSubmit}>
+                            <div className="main-info">
                             <label htmlFor="name">Name</label><br/>
                             <input 
                                 name="name" 
@@ -82,10 +83,13 @@ export const Registration =()=>{
                             />
                             <Buttons content="CREATE ACCOUNT" />
                             <div className="rule"></div>
-                            <button><a href="/login">SIGN IN</a></button>
+                            
+                            </div>
                         </form>
                         
-                    </div>
+                            <button className="btnli"><a href="/login">SIGN IN</a></button>
+
+                    
                 </div>
             </StyledRegistration>
         </>
@@ -108,8 +112,8 @@ const StyledRegistration = styled.div`
             flex-direction: column;
             opacity: 0.9;
             label{
-                padding-bottom: 7px;
-                padding-top: 35px;
+                padding-bottom: 5px;
+                padding-top: 15px;
                 padding-left: 10px;
             }
             .input{
@@ -125,26 +129,28 @@ const StyledRegistration = styled.div`
                 }
                 
             }
-            button{
-                margin-top: 20px;
-                width: 300px;
-                background-color: #2424ff;
-                color: white ;
-                border: none;
-                border-radius: 20px;
-                height: 40px;
-                font-size: 14px;
-                font-weight: 400;
-                text-transform: uppercase;
-                opacity: 0.9;
-                cursor: pointer;
-            }
+
             .rule {
                 width: 300px;
                 height: 1px;
                 border-top: 1px solid #ccc;
                 margin: 20px 0;
             }
+        }
+        button{
+            margin-left: 15px;
+            margin-top: 20px;
+            width: 300px;
+            background-color: #2424ff;
+            color: white ;
+            border: none;
+            border-radius: 20px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            opacity: 0.9;
+            cursor: pointer;
         }
     }
 `

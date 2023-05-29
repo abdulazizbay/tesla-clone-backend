@@ -9,7 +9,6 @@ export const AllNewInterior = ()=>{
                 <div className="newInterior">
                     <div className="title" data-aos='fade-up'><h1>All-New Interior</h1></div>
                 <div className="image">
-
                 </div>
                 </div>
             </StyledInterior>
@@ -39,4 +38,5 @@ const StyledInterior = styled.div`
             background-size: cover;
         }
     }
+}
 `

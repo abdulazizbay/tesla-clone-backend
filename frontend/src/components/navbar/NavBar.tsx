@@ -1,8 +1,6 @@
 import logo from '../../assets/img/tesla-logo.svg'
 import styled from "styled-components"
 import { useState } from 'react'
-
-
 export const NavBar = ()=>{
     const [menuOpen, setMenuOpen] = useState(false)
     return(

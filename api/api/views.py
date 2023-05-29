@@ -1,13 +1,12 @@
-from django.shortcuts import render
+
 from rest_framework.response import Response
 from .models import User
-from rest_framework.views import APIView
-from .serializers import UserSerializer
+from .serializers import UserSerializer,LoginUserSerializer
 from rest_framework.decorators import api_view
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
-
+from rest_framework import status
 
 @api_view(["POST"])
 @csrf_exempt
@@ -37,3 +36,33 @@ def register(request):
             return Response({'error': 'Passwords do not match'}, status=400)
     else:
         return Response(serializer.errors, status=400)
+
+
+
+
+
+
+
+@api_view(["POST"])
+@csrf_exempt
+def user_login(request):
+    serializer = LoginUserSerializer(data=request.data)
+    if serializer.is_valid():
+        username = request.data['username']
+        password = request.data['password']
+        user = authenticate(request, username=username, password=password)
+        if user:
+            if user.is_active:
+                login(request, user)
+                if user.is_superuser:
+                    return Response({'status': 'admin'})
+                elif user.is_staff:
+                    return Response({'status': 'staff'})
+                else:
+                    return Response({'status': 'user'})
+            else:
+                return Response({'status': 'inactive'}, status=status.HTTP_401_UNAUTHORIZED)
+        else:
+            return Response({'status': 'invalid_credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+    
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

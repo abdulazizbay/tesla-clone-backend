@@ -20,10 +20,6 @@ export const ModelInfo = ()=>{
     return(
         <>
             <div className="modelInfo">
-                
-
-
-                
             { 
                 l === '/model3' ? (
                     data.slice(0, 1).map((item) => (
@@ -75,9 +71,6 @@ export const ModelInfo = ()=>{
                     ))
                 ) : null
                 }  
-
-                
-                
             </div>
             <AllNewInterior/>
             <Features 
