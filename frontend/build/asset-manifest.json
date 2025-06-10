@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3583c38.css",
+    "main.js": "/static/js/main.66066588.js",
+    "static/js/787.4a41d009.chunk.js": "/static/js/787.4a41d009.chunk.js",
+    "static/media/tesla.png": "/static/media/tesla.f10922ec7cb54b81c202.png",
+    "static/media/solar-roof.jpg": "/static/media/solar-roof.c56df7e2a67b62a0b30f.jpg",
+    "static/media/solar-panel.jpg": "/static/media/solar-panel.302d94b40b34576a0e49.jpg",
+    "static/media/model3_2.jpeg": "/static/media/model3_2.4650b7abaa46f34d645b.jpeg",
+    "static/media/model-y.jpg": "/static/media/model-y.9413e2cf95fcb9a4cb51.jpg",
+    "static/media/new-interior.jpg": "/static/media/new-interior.6a06b17022c9f3c535bb.jpg",
+    "static/media/modely_2.jpeg": "/static/media/modely_2.188c41ba72087600a56b.jpeg",
+    "static/media/model-s.jpg": "/static/media/model-s.86f1677aa2f52368f96e.jpg",
+    "static/media/model-x.jpg": "/static/media/model-x.d82755c62aa22effbc67.jpg",
+    "static/media/modelx_2.jpg": "/static/media/modelx_2.124e7931e8bdec9389c5.jpg",
+    "static/media/audio.jpg": "/static/media/audio.93bbd9629c3906817112.jpg",
+    "static/media/accessories.jpg": "/static/media/accessories.99948d7f18f4fb8e32ae.jpg",
+    "static/media/connected.jpg": "/static/media/connected.e908d6555610dd7fd7d7.jpg",
+    "static/media/game.jpg": "/static/media/game.80315756aa7faa12bcf0.jpg",
+    "static/media/tesla-logo.svg": "/static/media/tesla-logo.f4d2f035361dcd661aa5148c56087904.svg",
+    "index.html": "/index.html",
+    "main.d3583c38.css.map": "/static/css/main.d3583c38.css.map",
+    "main.66066588.js.map": "/static/js/main.66066588.js.map",
+    "787.4a41d009.chunk.js.map": "/static/js/787.4a41d009.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3583c38.css",
+    "static/js/main.66066588.js"
+  ]
+}
